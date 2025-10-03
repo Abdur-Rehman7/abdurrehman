@@ -238,10 +238,11 @@ const Experience = React.forwardRef((props, ref) => {
                     sx={{
                       ml: { xs: 0, md: 8 },
                       pl: { xs: 0, md: 2 },
-                      pb: 2, // some space inside
-                      mb: 2, // spacing between cards
-                      borderBottom: "1px solid",
-                      borderColor: "divider", // uses MUI theme divider color
+                      pb: 2,
+                      mb: 2,
+                      borderBottom:
+                        index !== experiences.length - 1 ? "1px solid" : "none", // ✅ no border on last card
+                      borderColor: "divider",
                     }}
                   >
                     <Box display="flex" alignItems="center" mb={1} gap={2}>
