@@ -31,10 +31,19 @@ const experiences = [
     desc: "Developed responsive web apps using React, MUI, and Tailwind. Improved UX and optimized performance.",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     tech: [
-      { name: "React", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+      {
+        name: "React",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      },
       { name: "MUI", img: "https://mui.com/static/logo.png" },
-      { name: "Tailwind CSS", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" },
-      { name: "JavaScript", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+      {
+        name: "Tailwind CSS",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+      },
+      {
+        name: "JavaScript",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      },
     ],
   },
   {
@@ -45,9 +54,18 @@ const experiences = [
     desc: "Designed user interfaces and prototypes using Figma and Adobe XD. Worked with developers for smooth handoff.",
     logo: "https://cdn-icons-png.flaticon.com/512/888/888879.png",
     tech: [
-      { name: "Figma", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
-      { name: "Adobe XD", img: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adobe_XD_CC_icon.svg" },
-      { name: "Photoshop", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg" },
+      {
+        name: "Figma",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+      },
+      {
+        name: "Adobe XD",
+        img: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adobe_XD_CC_icon.svg",
+      },
+      {
+        name: "Photoshop",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg",
+      },
     ],
   },
   {
@@ -58,9 +76,18 @@ const experiences = [
     desc: "Produced SEO content that boosted site traffic by 150%. Optimized blogs with researched keywords.",
     logo: "https://cdn-icons-png.flaticon.com/512/888/888841.png",
     tech: [
-      { name: "SEO", img: "https://cdn-icons-png.flaticon.com/512/888/888841.png" },
-      { name: "WordPress", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" },
-      { name: "Content Writing", img: "https://cdn-icons-png.flaticon.com/512/3022/3022126.png" },
+      {
+        name: "SEO",
+        img: "https://cdn-icons-png.flaticon.com/512/888/888841.png",
+      },
+      {
+        name: "WordPress",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
+      },
+      {
+        name: "Content Writing",
+        img: "https://cdn-icons-png.flaticon.com/512/3022/3022126.png",
+      },
     ],
   },
 ];
@@ -73,7 +100,10 @@ const Experience = React.forwardRef((props, ref) => {
     offset: ["start 10%", "end 90%"],
   });
 
-  const smoothProgress = useSpring(scrollYProgress, { stiffness: 100, damping: 20 });
+  const smoothProgress = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 20,
+  });
 
   const lineHeight = useTransform(smoothProgress, [0, 1], ["0%", "100%"]);
   const lineWidth = useTransform(smoothProgress, [0, 1], ["0%", "100%"]);
@@ -87,10 +117,20 @@ const Experience = React.forwardRef((props, ref) => {
   return (
     <Box ref={ref} sx={{ py: { xs: 8, md: 12 }, bgcolor: "background.paper" }}>
       <Container maxWidth="lg">
-        <Typography variant="h4" fontWeight={700} textAlign="center" gutterBottom>
+        <Typography
+          variant="h4"
+          fontWeight={700}
+          textAlign="center"
+          gutterBottom
+        >
           Experience Timeline
         </Typography>
-        <Typography variant="subtitle1" color="text.secondary" textAlign="center" mb={6}>
+        <Typography
+          variant="subtitle1"
+          color="text.secondary"
+          textAlign="center"
+          mb={6}
+        >
           Professional journey and achievements
         </Typography>
 
@@ -102,7 +142,10 @@ const Experience = React.forwardRef((props, ref) => {
             overflowX: { xs: "auto", md: "visible" },
             position: "relative",
             "&::-webkit-scrollbar": { height: 8 },
-            "&::-webkit-scrollbar-thumb": { backgroundColor: "primary.main", borderRadius: 4 },
+            "&::-webkit-scrollbar-thumb": {
+              backgroundColor: "primary.main",
+              borderRadius: 4,
+            },
           }}
         >
           {/* Animated line (vertical on desktop, horizontal on mobile) */}
@@ -191,18 +234,33 @@ const Experience = React.forwardRef((props, ref) => {
                     />
                   </Tooltip>
 
-                  <Box sx={{ ml: { xs: 0, md: 8 }, pl: { xs: 0, md: 2 } }}>
+                  <Box
+                    sx={{
+                      ml: { xs: 0, md: 8 },
+                      pl: { xs: 0, md: 2 },
+                      pb: 2, // some space inside
+                      mb: 2, // spacing between cards
+                      borderBottom: "1px solid",
+                      borderColor: "divider", // uses MUI theme divider color
+                    }}
+                  >
                     <Box display="flex" alignItems="center" mb={1} gap={2}>
-                      <Avatar src={exp.logo} alt={exp.company} sx={{ width: 56, height: 56 }} />
+                      <Avatar
+                        src={exp.logo}
+                        alt={exp.company}
+                        sx={{ width: 56, height: 56 }}
+                      />
                       <Box>
                         <Typography variant="h6" fontWeight={600}>
                           {exp.position}
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                          {exp.company} • {startLabel} – {endLabel} • {getDuration(exp.start, exp.end)}
+                          {exp.company} • {startLabel} – {endLabel} •{" "}
+                          {getDuration(exp.start, exp.end)}
                         </Typography>
                       </Box>
                     </Box>
+
                     <Typography
                       variant="body1"
                       color="text.primary"
@@ -211,10 +269,21 @@ const Experience = React.forwardRef((props, ref) => {
                       {exp.desc}
                     </Typography>
 
-                    <Box sx={{ display: "flex", gap: 1, ml: { xs: 0, md: 8 }, flexWrap: "wrap" }}>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        gap: 1,
+                        ml: { xs: 0, md: 8 },
+                        flexWrap: "wrap",
+                      }}
+                    >
                       {exp.tech.map((t, i) => (
                         <Tooltip key={i} title={t.name} arrow>
-                          <Avatar src={t.img} alt={t.name} sx={{ width: 32, height: 32 }} />
+                          <Avatar
+                            src={t.img}
+                            alt={t.name}
+                            sx={{ width: 32, height: 32 }}
+                          />
                         </Tooltip>
                       ))}
                     </Box>
