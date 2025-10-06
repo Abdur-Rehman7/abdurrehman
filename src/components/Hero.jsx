@@ -7,9 +7,9 @@ const roles = ["UI/UX Designer", "SEO Writer", "React Developer"];
 
 // Premium: Multiple background videos for scroll
 const scrollVideos = [
-  { start: 0, src: "https://www.w3schools.com/html/mov_bbb.mp4" },
-  { start: 500, src: "https://www.w3schools.com/html/movie.mp4" },
-  { start: 1000, src: "https://www.w3schools.com/html/mov_bbb.mp4" },
+  { start: 0, src: "https://youtu.be/pF4CZfNRqZQ" },
+  { start: 500, src: "https://youtu.be/pF4CZfNRqZQ" },
+  { start: 1000, src: "https://youtu.be/pF4CZfNRqZQ" },
 ];
 
 const Hero = React.forwardRef(({ onPrimaryClick }, ref) => {
