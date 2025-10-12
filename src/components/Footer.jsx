@@ -77,7 +77,7 @@ const Footer = React.forwardRef((props, ref) => {
           color="text.secondary"
           textAlign="center"
         >
-          © {new Date().getFullYear()} Ali. All rights reserved.
+          © {new Date().getFullYear()} Abdur Rehman. All rights reserved.
         </Typography>
       </Container>
     </Box>
