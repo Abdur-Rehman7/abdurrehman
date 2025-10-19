@@ -149,7 +149,7 @@ const Hero = React.forwardRef(({ onPrimaryClick }, ref) => {
           <Grid item xs={12} md={6} sx={{ textAlign: "center" }}>
             <motion.img
               src="https://via.placeholder.com/400x400.png?text=My+Portfolio"
-              alt="Ali Portfolio"
+              alt="Abdur Rehman Portfolio"
               style={{
                 maxWidth: "100%",
                 borderRadius: "20px",
