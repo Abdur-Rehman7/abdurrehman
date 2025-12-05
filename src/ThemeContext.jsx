@@ -24,7 +24,7 @@ export default function ThemeContextProvider({ children }) {
           primary: { main: "#1976d2" },
           secondary: { main: "#ff4081" },
           background: {
-            default: mode === "light" ? "#ffffff" : "#121212",
+            default: mode === "light" ? "#000000" : "#121212",
             paper: mode === "light" ? "#f9f9f9" : "#1e1e1e",
           },
           text: {

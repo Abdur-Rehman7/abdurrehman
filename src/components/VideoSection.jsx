@@ -15,7 +15,7 @@ const VideoSection = React.forwardRef(({ videoUrl, title, subtitle }, ref) => {
   if (!embedUrl) return null; // Invalid URL
 
   return (
-    <Box ref={ref} sx={{ py: { xs: 8, md: 12 }, bgcolor: "background.default" }}>
+    <Box ref={ref} sx={{ py: { xs: 8, md: 12 }, bgcolor: "background.paper" }}>
       <Container maxWidth="lg" sx={{ textAlign: "center" }}>
         {title && (
           <Typography variant="h4" fontWeight={700} gutterBottom>

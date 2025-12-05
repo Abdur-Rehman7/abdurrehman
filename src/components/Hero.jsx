@@ -2,6 +2,9 @@
 import React, { useState, useEffect } from "react";
 import { Box, Typography, Button, Container, Grid } from "@mui/material";
 import { motion, useScroll, useTransform } from "framer-motion";
+import hero from "../assets/hero-img.png"
+import mypic from "../assets/my-pic.png"
+import newpic from "../assets/new-pic.png"
 
 const roles = ["UI/UX Designer", "SEO Writer", "React Developer"];
 
@@ -148,7 +151,7 @@ const Hero = React.forwardRef(({ onPrimaryClick }, ref) => {
 
           <Grid item xs={12} md={6} sx={{ textAlign: "center" }}>
             <motion.img
-              src="https://via.placeholder.com/400x400.png?text=My+Portfolio"
+              src= {newpic}
               alt="Abdur Rehman Portfolio"
               style={{
                 maxWidth: "100%",
