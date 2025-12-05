@@ -11,16 +11,22 @@ import wrhub from "../assets/wr-hub.png";
 const getDuration = (start, end) => {
   const startDate = new Date(start);
   const endDate = end ? new Date(end) : new Date();
+
+  if (endDate < startDate) return "Invalid date range";
+
   const diffMonths =
     (endDate.getFullYear() - startDate.getFullYear()) * 12 +
     (endDate.getMonth() - startDate.getMonth());
+
   const years = Math.floor(diffMonths / 12);
   const months = diffMonths % 12;
+
   let result = "";
   if (years > 0) result += `${years} yr${years > 1 ? "s" : ""} `;
   if (months > 0) result += `${months} mo${months > 1 ? "s" : ""}`;
   return result || "Less than a month";
 };
+
 
 const formatDate = (date) => {
   const options = { year: "numeric", month: "short" };
