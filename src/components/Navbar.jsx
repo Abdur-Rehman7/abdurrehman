@@ -63,8 +63,8 @@ const Navbar = ({ onNav, activeSection }) => {
       elevation={trigger ? 3 : 0}
       sx={{
         transition: "all 0.3s ease",
-        bgcolor: trigger ? theme.palette.background.paper : "transparent",
-        backdropFilter: trigger ? "blur(8px)" : "none",
+        // bgcolor: trigger ? theme.palette.background.default : "transparent",
+        // backdropFilter: trigger ? "blur(8px)" : "none",
       }}
     >
       <Toolbar

@@ -49,7 +49,7 @@ const Testimonials = React.forwardRef((props, ref) => {
       ref={ref}
       sx={{
         py: { xs: 8, md: 12 },
-        backgroundColor: "background.default",
+        backgroundColor: "background.paper",
       }}
     >
       <Container maxWidth="lg">

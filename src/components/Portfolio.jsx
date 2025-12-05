@@ -37,7 +37,7 @@ const projects = [
 
 const Portfolio = React.forwardRef((props, ref) => {
   return (
-    <Box ref={ref} sx={{ py: { xs: 8, md: 12 }, bgcolor: "background.default" }}>
+    <Box ref={ref} sx={{ py: { xs: 8, md: 12 }, bgcolor: "background.paper" }}>
       <Container maxWidth="lg">
         <Typography
           variant="h4"

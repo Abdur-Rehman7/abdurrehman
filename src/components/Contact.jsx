@@ -44,7 +44,7 @@ const Contact = React.forwardRef((props, ref) => {
     <Box
       ref={ref}
       component="section"
-      sx={{ py: { xs: 8, md: 12 }, bgcolor: "#f9f9f9" }}
+      sx={{ py: { xs: 8, md: 12 }, bgcolor: "background.paper" }}
     >
       <Container maxWidth="md">
         <Paper
