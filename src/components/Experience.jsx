@@ -44,15 +44,15 @@ const experiences = [
     tech: [
       {
         name: "Gutenberg",
-        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
+        img: "",
       },
       {
         name: "Elementor",
-        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
+        img: "",
       },
       {
         name: "Divi",
-        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
+        img: "",
       },
       {
         name: "php",
