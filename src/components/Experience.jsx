@@ -2,6 +2,11 @@
 import React, { useRef } from "react";
 import { Box, Typography, Container, Avatar, Tooltip } from "@mui/material";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import softpulse from "../assets/softpulse.jpg";
+import gop from "../assets/gop.svg";
+import hds from "../assets/hadi-digital-solution.jpg";
+import ibs from "../assets/infinti-bussiness-solution.jpg";
+import wrhub from "../assets/wr-hub.png";
 
 const getDuration = (start, end) => {
   const startDate = new Date(start);
@@ -24,12 +29,46 @@ const formatDate = (date) => {
 
 const experiences = [
   {
-    company: "Tech Solutions Inc.",
-    position: "Frontend Developer",
-    start: "2022-01-01",
-    end: null,
-    desc: "Developed responsive web apps using React, MUI, and Tailwind. Improved UX and optimized performance.",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    company: "Web Rank Hub Inc.",
+    position: "WordPress Developer",
+    start: "2025-08-26",
+    end: "2024-09-29",
+    desc: "Completed a WordPress Developer internship, gaining hands-on experience building and customizing responsive websites with themes, plugins, HTML, CSS, and PHP, while optimizing performance and integrating APIs at Web Rank Hub.",
+    logo: wrhub,
+    tech: [
+      {
+        name: "Gutenberg",
+        img: "https://svgrepo.com/show/306168/gutenberg.svg",
+      },
+      {
+        name: "Elementor",
+        img: "https://www.flaticon.com/free-icon/elementor_5968699?term=elementor&page=1&position=1&origin=search&related_id=5968699",
+      },
+      {
+        name: "Divi",
+        img: "https://logo.svgcdn.com/token-branded/divi.svg",
+      },
+      {
+        name: "php",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg",
+      },
+      {
+        name: "JQuery",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg",
+      },
+      {
+        name: "WordPress",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
+      },
+    ],
+  },
+  {
+    company: "Infinti Bussiness Solutions Inc.",
+    position: "Recat JS Frontend Developer",
+    start: "2024-09-01",
+    end: "2024-11-22",
+    desc: "Gained experience developing responsive, high-performance CRM and ERP web interfaces using HTML, CSS, Tailwind, MUI, JavaScript (ES6+), and React/Angular while collaborating in agile teams to enhance usability and cross-browser compatibility at Infiniti Business Solutions.",
+    logo: ibs,
     tech: [
       {
         name: "React",
@@ -47,46 +86,85 @@ const experiences = [
     ],
   },
   {
-    company: "Creative Agency",
-    position: "UI/UX Designer",
-    start: "2020-03-01",
-    end: "2021-12-31",
-    desc: "Designed user interfaces and prototypes using Figma and Adobe XD. Worked with developers for smooth handoff.",
-    logo: "https://cdn-icons-png.flaticon.com/512/888/888879.png",
+    company: "Hadi Digital Solutions Inc.",
+    position: "React JS Frontend Developer",
+    start: "2024-09-01",
+    end: "2024-11-22",
+    desc: "Gained hands-on experience in building responsive React-based web interfaces, integrating RESTful APIs, performing unit testing, and contributing to code reviews to enhance overall application quality at Hadi Digital Solution.",
+    logo: hds,
     tech: [
       {
-        name: "Figma",
-        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+        name: "React",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      },
+      { name: "MUI", img: "https://mui.com/static/logo.png" },
+      {
+        name: "Tailwind CSS",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
       },
       {
-        name: "Adobe XD",
-        img: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adobe_XD_CC_icon.svg",
-      },
-      {
-        name: "Photoshop",
-        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg",
+        name: "JavaScript",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
       },
     ],
   },
   {
-    company: "SEO Hub",
-    position: "SEO Content Writer",
-    start: "2019-01-01",
-    end: "2020-02-28",
-    desc: "Produced SEO content that boosted site traffic by 150%. Optimized blogs with researched keywords.",
-    logo: "https://cdn-icons-png.flaticon.com/512/888/888841.png",
+    company: "Goverment Of Pakistan",
+    position: "Full Stack Developer",
+    start: "2024-08-12",
+    end: "2024-10-31",
+    desc: "Gained hands-on experience in HTML, CSS, jQuery, and WordPress under a training program supported by the Government of Pakistan.",
+    logo: gop,
     tech: [
       {
-        name: "SEO",
-        img: "https://cdn-icons-png.flaticon.com/512/888/888841.png",
+        name: "HTML5",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
       },
       {
-        name: "WordPress",
+        name: "CSS3",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      },
+      {
+        name: "JQUERY",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg",
+      },
+      {
+        name: "Wordpress",
         img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
       },
+    ],
+  },
+  {
+    company: "Soft Pulse Inc.",
+    position: "React Js Front End Developer ",
+    start: "2024-01-01",
+    end: "2024-07-11",
+    desc: "Successfully completed training with practical experience in HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, and React.js development.",
+    logo: softpulse,
+    tech: [
       {
-        name: "Content Writing",
-        img: "https://cdn-icons-png.flaticon.com/512/3022/3022126.png",
+        name: "HTML5",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      },
+      {
+        name: "CSS3",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      },
+      {
+        name: "JavaScripit",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      },
+      {
+        name: "Bootstrap",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg",
+      },
+      {
+        name: "Tailwind CSS",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+      },
+      {
+        name: "React",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
       },
     ],
   },
