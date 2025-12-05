@@ -11,16 +11,22 @@ import wrhub from "../assets/wr-hub.png";
 const getDuration = (start, end) => {
   const startDate = new Date(start);
   const endDate = end ? new Date(end) : new Date();
+
+  if (endDate < startDate) return "Invalid date range";
+
   const diffMonths =
     (endDate.getFullYear() - startDate.getFullYear()) * 12 +
     (endDate.getMonth() - startDate.getMonth());
+
   const years = Math.floor(diffMonths / 12);
   const months = diffMonths % 12;
+
   let result = "";
   if (years > 0) result += `${years} yr${years > 1 ? "s" : ""} `;
   if (months > 0) result += `${months} mo${months > 1 ? "s" : ""}`;
   return result || "Less than a month";
 };
+
 
 const formatDate = (date) => {
   const options = { year: "numeric", month: "short" };
@@ -32,21 +38,21 @@ const experiences = [
     company: "Web Rank Hub Inc.",
     position: "WordPress Developer",
     start: "2025-08-26",
-    end: "2024-09-29",
+    end: "2025-09-29",
     desc: "Completed a WordPress Developer internship, gaining hands-on experience building and customizing responsive websites with themes, plugins, HTML, CSS, and PHP, while optimizing performance and integrating APIs at Web Rank Hub.",
     logo: wrhub,
     tech: [
       {
         name: "Gutenberg",
-        img: "",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
       },
       {
         name: "Elementor",
-        img: "",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
       },
       {
         name: "Divi",
-        img: "",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
       },
       {
         name: "php",
