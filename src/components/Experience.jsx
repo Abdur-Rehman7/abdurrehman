@@ -38,15 +38,15 @@ const experiences = [
     tech: [
       {
         name: "Gutenberg",
-        img: "https://svgrepo.com/show/306168/gutenberg.svg",
+        img: "",
       },
       {
         name: "Elementor",
-        img: "https://www.flaticon.com/free-icon/elementor_5968699?term=elementor&page=1&position=1&origin=search&related_id=5968699",
+        img: "",
       },
       {
         name: "Divi",
-        img: "https://logo.svgcdn.com/token-branded/divi.svg",
+        img: "",
       },
       {
         name: "php",
