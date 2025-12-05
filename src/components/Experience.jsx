@@ -32,7 +32,7 @@ const experiences = [
     company: "Web Rank Hub Inc.",
     position: "WordPress Developer",
     start: "2025-08-26",
-    end: "2024-09-29",
+    end: "2025-09-29",
     desc: "Completed a WordPress Developer internship, gaining hands-on experience building and customizing responsive websites with themes, plugins, HTML, CSS, and PHP, while optimizing performance and integrating APIs at Web Rank Hub.",
     logo: wrhub,
     tech: [
