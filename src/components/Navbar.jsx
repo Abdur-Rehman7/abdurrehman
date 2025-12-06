@@ -46,7 +46,10 @@ const Navbar = ({ onNav, activeSection }) => {
                 primary={item.label}
                 primaryTypographyProps={{
                   fontWeight: activeSection === item.key ? 700 : 500,
-                  color: activeSection === item.key ? "primary.main" : "text.primary",
+                  color:
+                    activeSection === item.key
+                      ? "primary.main"
+                      : "text.primary",
                 }}
               />
             </ListItemButton>
@@ -57,75 +60,113 @@ const Navbar = ({ onNav, activeSection }) => {
   );
 
   return (
-    <AppBar
-      position="sticky"
-      color="default"
-      elevation={trigger ? 3 : 0}
-      sx={{
-        transition: "all 0.3s ease",
-        // bgcolor: trigger ? theme.palette.background.default : "transparent",
-        // backdropFilter: trigger ? "blur(8px)" : "none",
-      }}
-    >
-      <Toolbar
+    <>
+      <AppBar
+        position="sticky"
+        color="default"
+        elevation={trigger ? 3 : 0}
         sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          py: trigger ? 1 : 2,
           transition: "all 0.3s ease",
+          // bgcolor: trigger ? theme.palette.background.default : "transparent",
+          // backdropFilter: trigger ? "blur(8px)" : "none",
         }}
       >
-        {/* Logo */}
-        <Typography
-          variant="h6"
-          fontWeight={700}
-          sx={{ fontSize: trigger ? "1rem" : "1.25rem", transition: "all 0.3s ease" }}
+        <Toolbar
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            py: trigger ? 1 : 2,
+            transition: "all 0.3s ease",
+          }}
         >
-          Abdur Rehman
-        </Typography>
+          {/* Logo */}
+          <Typography
+            variant="h6"
+            fontWeight={700}
+            sx={{
+              fontSize: trigger ? "1rem" : "1.25rem",
+              transition: "all 0.3s ease",
+            }}
+          >
+            Abdur Rehman
+          </Typography>
 
-        {/* Desktop Nav */}
-        <Box sx={{ display: { xs: "none", md: "flex" }, gap: 2, alignItems: "center" }}>
-          {navItems.map((item) => (
-            <Button
-              key={item.key}
-              onClick={() => onNav(item.key)}
-              color={activeSection === item.key ? "primary" : "inherit"}
-              sx={{
-                fontWeight: activeSection === item.key ? 700 : 500,
-                borderBottom: activeSection === item.key ? "2px solid" : "none",
-                borderColor: activeSection === item.key ? "primary.main" : "transparent",
-                borderRadius: 0,
-                fontSize: trigger ? "0.9rem" : "1rem",
-                transition: "all 0.3s ease",
-              }}
-            >
-              {item.label}
-            </Button>
-          ))}
+          {/* Desktop Nav */}
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              gap: 2,
+              alignItems: "center",
+            }}
+          >
+            {navItems.map((item) => (
+              <Button
+                key={item.key}
+                onClick={() => onNav(item.key)}
+                color={activeSection === item.key ? "primary" : "inherit"}
+                sx={{
+                  fontWeight: activeSection === item.key ? 700 : 500,
+                  borderBottom:
+                    activeSection === item.key ? "2px solid" : "none",
+                  borderColor:
+                    activeSection === item.key ? "primary.main" : "transparent",
+                  borderRadius: 0,
+                  fontSize: trigger ? "0.9rem" : "1rem",
+                  transition: "all 0.3s ease",
+                }}
+              >
+                {item.label}
+              </Button>
+            ))}
 
-          <IconButton onClick={colorMode.toggleColorMode} color="inherit">
-            {theme.palette.mode === "dark" ? <Brightness7Icon /> : <Brightness4Icon />}
-          </IconButton>
-        </Box>
+            <IconButton onClick={colorMode.toggleColorMode} color="inherit">
+              {theme.palette.mode === "dark" ? (
+                <Brightness7Icon />
+              ) : (
+                <Brightness4Icon />
+              )}
+            </IconButton>
+          </Box>
 
-        {/* Mobile Nav */}
-        <Box sx={{ display: { xs: "flex", md: "none" }, alignItems: "center" }}>
-          <IconButton onClick={handleDrawerToggle} color="inherit">
-            <MenuIcon />
-          </IconButton>
-        </Box>
-      </Toolbar>
+          {/* Mobile Nav */}
+          <Box
+            sx={{ display: { xs: "flex", md: "none" }, alignItems: "center" }}
+          >
+            <IconButton onClick={handleDrawerToggle} color="inherit">
+              <MenuIcon />
+            </IconButton>
+          </Box>
+        </Toolbar>
 
-      <Drawer
-        anchor="right"
-        open={mobileOpen}
-        onClose={handleDrawerToggle}
-        ModalProps={{ keepMounted: true }}
+        <Drawer
+          anchor="right"
+          open={mobileOpen}
+          onClose={handleDrawerToggle}
+          ModalProps={{ keepMounted: true }}
+        >
+          {drawer}
+        </Drawer>
+      </AppBar>
+      <Box
+        sx={{
+          backgroundColor: "warning.light",
+          color: "black",
+          py: 2,
+          textAlign: "center",
+        }}
       >
-        {drawer}
-      </Drawer>
-    </AppBar>
+        <Typography fontWeight={600}>
+          This website is currently under construction.
+        </Typography>
+        <Typography>
+          We’re working hard to bring you something great. Please check back
+          soon!
+        </Typography>
+        <Typography color="green" fontWeight={900}>
+          Due to a busy routine, progress is a bit slow.
+        </Typography>
+      </Box>
+    </>
   );
 };
 
