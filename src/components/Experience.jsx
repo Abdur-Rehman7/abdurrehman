@@ -7,6 +7,10 @@ import gop from "../assets/gop.svg";
 import hds from "../assets/hadi-digital-solution.jpg";
 import ibs from "../assets/infinti-bussiness-solution.jpg";
 import wrhub from "../assets/wr-hub.png";
+import harwage from "../assets/Harwage.avif";
+import im from "../assets/inventory-managment-icon.png";
+import shopify from "../assets/shopify.png";
+import customercare from "../assets/customer-care.png";
 
 const getDuration = (start, end) => {
   const startDate = new Date(start);
@@ -27,13 +31,34 @@ const getDuration = (start, end) => {
   return result || "Less than a month";
 };
 
-
 const formatDate = (date) => {
   const options = { year: "numeric", month: "short" };
   return new Date(date).toLocaleDateString(undefined, options);
 };
 
 const experiences = [
+  {
+    company: "Harwage pvt.Ltd",
+    position: "Inventory Control Manager & Customer Care Representative ",
+    start: "2025-08-26",
+    end: "2025-09-29",
+    desc: "Completed a WordPress Developer internship, gaining hands-on experience building and customizing responsive websites with themes, plugins, HTML, CSS, and PHP, while optimizing performance and integrating APIs at Web Rank Hub.",
+    logo: harwage,
+    tech: [
+      {
+        name: "INventory Control & Customer Care Representative",
+        img: im,
+      },
+      {
+        name: "Shopify",
+        img: shopify,
+      },
+      {
+        name: "Customer Care",
+        img: customercare,
+      },
+    ],
+  },
   {
     company: "Web Rank Hub Inc.",
     position: "WordPress Developer",
