@@ -40,7 +40,7 @@ const experiences = [
   {
     company: "Harwage pvt.Ltd",
     position: "Inventory Managment & Customer Care Representative ",
-    start: "2025-08-26",
+    start: "2025-12-17",
     end: null,
     desc: "Completed a WordPress Developer internship, gaining hands-on experience building and customizing responsive websites with themes, plugins, HTML, CSS, and PHP, while optimizing performance and integrating APIs at Web Rank Hub.",
     logo: harwage,
