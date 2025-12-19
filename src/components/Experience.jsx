@@ -39,7 +39,7 @@ const formatDate = (date) => {
 const experiences = [
   {
     company: "Harwage pvt.Ltd",
-    position: "Inventory Managment & Customer Care Representative ",
+    position: "Customer Care Representative ",
     start: "2025-12-17",
     end: null,
     desc: "Customer Care Representative at Hawrage Pvt. Ltd., providing prompt, professional support to ensure customer satisfaction and resolve inquiries efficiently.",
