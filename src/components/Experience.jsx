@@ -42,16 +42,12 @@ const experiences = [
     position: "Inventory Managment & Customer Care Representative ",
     start: "2025-12-17",
     end: null,
-    desc: "Managed inventory operations while providing responsive customer support to ensure accurate stock control and high customer satisfaction at Harwage Pvt. Ltd.",
+    desc: "Customer Care Representative at Hawrage Pvt. Ltd., providing prompt, professional support to ensure customer satisfaction and resolve inquiries efficiently.",
     logo: harwage,
     tech: [
       {
         name: "INventory Control & Customer Care Representative",
         img: im,
-      },
-      {
-        name: "Shopify",
-        img: shopify,
       },
       {
         name: "Customer Care",
