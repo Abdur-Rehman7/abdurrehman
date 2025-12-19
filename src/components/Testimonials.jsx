@@ -21,7 +21,7 @@ const testimonials = [
     name: "Sarah Johnson",
     role: "Startup Founder",
     feedback:
-      "Working with Ali was a fantastic experience! He transformed our website with a clean, modern design and optimized it for SEO. Highly recommended!",
+      "Working with Abdur Rehman was a fantastic experience! He transformed our website with a clean, modern design and optimized it for SEO. Highly recommended!",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
     rating: 5,
   },
@@ -29,7 +29,7 @@ const testimonials = [
     name: "Michael Lee",
     role: "Marketing Manager",
     feedback:
-      "Ali’s attention to detail is incredible. The UI/UX he designed for our platform increased engagement and user satisfaction.",
+      "Abdur Rehman’s attention to detail is incredible. The UI/UX he designed for our platform increased engagement and user satisfaction.",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
     rating: 5,
   },
@@ -37,7 +37,7 @@ const testimonials = [
     name: "Emily Davis",
     role: "Blogger & Content Creator",
     feedback:
-      "Amazing SEO articles! My blog traffic grew by 200% in just 3 months thanks to Ali’s writing and strategy.",
+      "Amazing SEO articles! My blog traffic grew by 200% in just 3 months thanks to Abdur Rehman’s writing and strategy.",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
     rating: 5,
   },
