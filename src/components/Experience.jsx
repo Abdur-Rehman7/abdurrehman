@@ -41,7 +41,7 @@ const experiences = [
     company: "Harwage pvt.Ltd",
     position: "Customer Care Representative ",
     start: "2025-12-17",
-    end: null,
+    end: "2026-1-1",
     desc: "Customer Care Representative at Hawrage Pvt. Ltd., providing prompt, professional support to ensure customer satisfaction and resolve inquiries efficiently.",
     logo: harwage,
     tech: [
