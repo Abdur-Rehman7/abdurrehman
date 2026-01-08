@@ -10,7 +10,7 @@ import wrhub from "../assets/wr-hub.png";
 import harwage from "../assets/Harwage.avif";
 import im from "../assets/inventory-managment-icon.png";
 import customercare from "../assets/customer-care.png";
-import novaork from "../assets/novaork.jpg"
+import novaork from "../assets/novaork.jpg";
 
 const getDuration = (start, end) => {
   const startDate = new Date(start);
@@ -61,7 +61,6 @@ const experiences = [
         name: "Tailwind CSS",
         img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
       },
-      { name: "MUI", img: "https://mui.com/static/logo.png" },
       {
         name: "React",
         img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
