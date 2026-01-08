@@ -9,8 +9,8 @@ import ibs from "../assets/infinti-bussiness-solution.jpg";
 import wrhub from "../assets/wr-hub.png";
 import harwage from "../assets/Harwage.avif";
 import im from "../assets/inventory-managment-icon.png";
-import shopify from "../assets/shopify.png";
 import customercare from "../assets/customer-care.png";
+import novaork from "../assets/novaork.jpg"
 
 const getDuration = (start, end) => {
   const startDate = new Date(start);
@@ -37,6 +37,37 @@ const formatDate = (date) => {
 };
 
 const experiences = [
+  {
+    company: "Novaork",
+    position: "React JS Front End Developer",
+    start: "2025-10-19",
+    end: null,
+    desc: "Developed responsive CRM and ERP web interfaces using React, Tailwind CSS, MUI, HTML, CSS, and JavaScript (ES6+), collaborating in agile teams at Novaork Software Company to enhance usability and cross-browser compatibility.",
+    logo: novaork,
+    tech: [
+      {
+        name: "HTML5",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      },
+      {
+        name: "CSS3",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      },
+      {
+        name: "JavaScript",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      },
+      {
+        name: "Tailwind CSS",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+      },
+      { name: "MUI", img: "https://mui.com/static/logo.png" },
+      {
+        name: "React",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      },
+    ],
+  },
   {
     company: "Harwage pvt.Ltd",
     position: "Customer Care Representative ",
