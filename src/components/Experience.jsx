@@ -42,7 +42,7 @@ const experiences = [
     position: "React JS Front End Developer",
     start: "2025-10-19",
     end: null,
-    desc: "Developed responsive web interfaces using React, Tailwind CSS, HTML, CSS, and JavaScript (ES6+), collaborating in agile teams at Novaork Software Company to enhance usability and cross-browser compatibility.",
+    desc: "Developed responsive websites & CRM web interfaces using React, Tailwind CSS, HTML, CSS, and JavaScript (ES6+), collaborating in agile teams at Novaork Software Company to enhance usability and cross-browser compatibility.",
     logo: novaork,
     tech: [
       {
