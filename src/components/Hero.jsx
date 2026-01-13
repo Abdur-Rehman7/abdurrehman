@@ -2,11 +2,16 @@
 import React, { useState, useEffect } from "react";
 import { Box, Typography, Button, Container, Grid } from "@mui/material";
 import { motion, useScroll, useTransform } from "framer-motion";
-import hero from "../assets/hero-img.png"
-import mypic from "../assets/my-pic.png"
-import newpic from "../assets/new-pic.png"
+import hero from "../assets/hero-img.png";
+import mypic from "../assets/my-pic.png";
+import newpic from "../assets/new-pic.png";
 
-const roles = ["UI/UX Designer", "SEO Writer", "React Developer"];
+const roles = [
+  "UI/UX Designer",
+  "SEO Writer",
+  "Wordpress Developer",
+  "React Developer",
+];
 
 // Premium: Multiple background videos for scroll
 const scrollVideos = [
@@ -128,15 +133,28 @@ const Hero = React.forwardRef(({ onPrimaryClick }, ref) => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
               style={{
-                transform: `translate(${mousePos.x / 2}px, ${mousePos.y / 2}px)`,
+                transform: `translate(${mousePos.x / 2}px, ${
+                  mousePos.y / 2
+                }px)`,
               }}
             >
-              <Typography variant="h3" fontWeight={700} gutterBottom color="common.white">
+              <Typography
+                variant="h3"
+                fontWeight={700}
+                gutterBottom
+                color="common.white"
+              >
                 Hi, I’m Abdur Rehman 👋
               </Typography>
-              <Typography variant="h5" color="rgba(255,255,255,0.8)" gutterBottom>
+              <Typography
+                variant="h5"
+                color="rgba(255,255,255,0.8)"
+                gutterBottom
+              >
                 {text}
-                <span style={{ borderRight: "2px solid white", marginLeft: 2 }}></span>
+                <span
+                  style={{ borderRight: "2px solid white", marginLeft: 2 }}
+                ></span>
               </Typography>
               <Button
                 variant="contained"
@@ -151,7 +169,7 @@ const Hero = React.forwardRef(({ onPrimaryClick }, ref) => {
 
           <Grid item xs={12} md={6} sx={{ textAlign: "center" }}>
             <motion.img
-              src= {newpic}
+              src={newpic}
               alt="Abdur Rehman Portfolio"
               style={{
                 maxWidth: "100%",
